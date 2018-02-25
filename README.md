@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Download the app as zip and unzip it.
+
+SERVER_KEY: the key of the app you want to import it to  
+PATH: path to the root of unzipped app  
+
+``Usage: wit-importer [SERVER_KEY] [PATH_TO_APP_ZIP_ROOT]``
+
 
 ## Development
 

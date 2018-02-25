@@ -1,3 +1,17 @@
 #!/usr/bin/env ruby
 
 require "wit/importer"
+
+if ARGV.size != 2
+  puts "Usage: wit-importer [SERVER_KEY] [PATH_TO_APP_ZIP_ROOT]\n"
+  exit(1)
+end
+
+unless File.exists?(Pathname.new(Dir.pwd).join(ARGV[1])) &&
+    File.directory?(Pathname.new(Dir.pwd).join(ARGV[1]))
+  puts "Directory not found #{Pathname.new(Dir.pwd).join(ARGV[1])}\n\n"
+  puts "Usage: wit-importer [SERVER_KEY] [PATH_TO_APP_ZIP_ROOT]\n"
+  exit(1)
+end
+
+Wit::Importer.import(ARGV[0], ARGV[1])
