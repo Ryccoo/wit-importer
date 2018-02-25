@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Richard Ludvigh"]
   spec.email         = ["richard.ludvigh@gmail.com"]
 
-  spec.summary       = ''
-  spec.description   = ''
-  spec.homepage      = ''
+  spec.summary       = 'Import exported zip app into existing app'
+  spec.description   = 'Import exported zip app into existing app'
+  spec.homepage      = 'https://github.com/Ryccoo/wit-importer'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
