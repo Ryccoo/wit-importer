@@ -87,6 +87,8 @@ module Wit
             entity['entity'] = 'wit$' + entity['entity']
           end
 
+          entity['value'] = strip(entity['value'])
+
         end
       end
 
@@ -148,6 +150,14 @@ module Wit
 
     def build_uri(endpoint)
       API_URL + endpoint + '?v=' + API_VERSION
+    end
+
+    def strip(value)
+      value = value.strip
+      value = value[1..-1] if value.start_with?("\"")
+      value = value[0...-1] if value.end_with?("\"")
+
+      return value.strip
     end
 
 
