@@ -1,8 +1,11 @@
 # Wit::Importer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wit/importer`. To experiment with that code, run `bin/console` for an interactive prompt.
+Currently WIT.AI does not allow any way to export, clone or share application with public only with list of allowed people.
+You can export you application and let other users import it however, this can be done only when creating new app.
 
-TODO: Delete this and the text above, and describe your gem
+This **WIT IMPORTER** tool allowes you to import all definitions of expoerted app to either new or app that already contains other definitions. 
+
+Be avare that the definitions will load alongside your previous and it can't be undone other than manually.
 
 ## Installation
 
@@ -11,20 +14,11 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'wit-importer'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install wit-importer
-
 ## Usage
 
 Download the app as zip and unzip it.
 
-SERVER_KEY: the key of the app you want to import it to  
+SERVER_KEY: the **SERVER** key of the app you want to import it to  
 PATH: path to the root of unzipped app  
 
 ``Usage: wit-importer [SERVER_KEY] [PATH_TO_APP_ZIP_ROOT]``
